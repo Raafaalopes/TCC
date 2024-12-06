@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/btnFecharPopUp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_close"
+        android:contentDescription="Fechar Pop-Up"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TICKET"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <!--
+    <TextView
+        android:id="@+id/emailQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dataGeracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data: xx/xx/xxxx"
+        android:layout_marginTop="4dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/codigoTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código do Ticket:"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
+        -->
+
+    <ImageView
+        android:id="@+id/qrCodeImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="QR Code" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Validado"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/red"
+        android:textColor="@color/white"
+        app:cornerRadius="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+
+    android:gravity="center"
+    android:clipToOutline="true">
+
+    <TextView
+        android:id="@+id/tituloResumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESUMO DA COMPRA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/quantidadeResumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantidade de tickets: 01"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/valorTotalResumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor total: R$5,00"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/botaoCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            app:cornerRadius="20dp"/>
+
+        <!-- Espaço entre os botões -->
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/botaoConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONFIRMAR"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

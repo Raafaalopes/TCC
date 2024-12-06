@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/resumoTickets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/totalPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/formasPagamento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/cartaoCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Crédito" />
+
+        <RadioButton
+            android:id="@+id/cartaoDebito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cartão de Débito" />
+
+        <RadioButton
+            android:id="@+id/pix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIX" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/finalizarPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar Pagamento"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        app:cornerRadius = "20dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

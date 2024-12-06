@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ComprarCafeFragment">
+
+    <!-- Quantidade e controles -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantidade:"
+            android:textSize="18sp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/quantidadeCafe"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="1"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp">
+
+            <ImageButton
+                android:id="@+id/btAumentarCafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_up"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Aumentar quantidade" />
+
+            <ImageButton
+                android:id="@+id/btDiminuirCafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_down"
+                android:background="?attr/selectableItemBackground"
+                android:contentDescription="Diminuir quantidade" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botões de quantidade fixa -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/botao5TicketsCafe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="5 TICKETS"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            app:cornerRadius = "20dp"/>
+
+        <Button
+            android:id="@+id/botao20TicketsCafe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="20 TICKETS"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="8dp"
+            app:cornerRadius = "20dp"/>
+    </LinearLayout>
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/precoTotalCafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: R$ 2,00"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginVertical="16dp"
+        android:textColor="@color/black" />
+
+    <!-- Botão de compra -->
+    <Button
+        android:id="@+id/botaoComprarCafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COMPRAR"
+        android:backgroundTint="@color/red"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        app:cornerRadius = "20dp"/>
+
+</LinearLayout>

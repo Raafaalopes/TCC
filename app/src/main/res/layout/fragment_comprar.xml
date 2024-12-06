@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Sessão Almoço/Janta -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Almoço/Jantar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btDiminuirAlmoco"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_menos" />
+
+            <EditText
+                android:id="@+id/quantidadeAlmoco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:text="0"
+                android:background="@null"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btAumentarAlmoco"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_mais" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/precoTotalAlmoco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: R$ 0,00"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Sessão Café da Manhã -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café da Manhã"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/btDiminuirCafe"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_menos" />
+
+            <EditText
+                android:id="@+id/quantidadeCafe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:gravity="center"
+                android:text="0"
+                android:background="@null"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btAumentarCafe"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_mais" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/precoTotalCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: R$ 0,00"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão único para comprar todos -->
+        <Button
+            android:id="@+id/botaoComprarTodos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            app:cornerRadius = "20dp"
+            android:text="Comprar Tickets" />
+    </LinearLayout>
+</ScrollView>

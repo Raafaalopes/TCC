@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "492047903102",
+    "project_id": "cadastrar-entrar-firebase",
+    "storage_bucket": "cadastrar-entrar-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492047903102:android:02dcec17424698c92deb2f",
+        "android_client_info": {
+          "package_name": "com.example.cadastrarentrarfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCR8boSxidfzlDkcIsf6-QBr1CuOsXmCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
