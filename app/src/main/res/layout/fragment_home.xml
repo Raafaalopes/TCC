@@ -106,7 +106,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Estudante da UEM elogia o cardápio vegano do RU."
+            android:text="Estudante da UEM elogia o cardápio vegetariano do RU."
             android:textSize="18sp"
             android:paddingBottom="8dp"
             android:textColor="@color/black"/>
