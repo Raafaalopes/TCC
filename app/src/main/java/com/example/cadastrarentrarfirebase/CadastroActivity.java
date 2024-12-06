@@ -140,7 +140,7 @@ public class CadastroActivity extends AppCompatActivity {
                                 Toast.makeText(CadastroActivity.this, "Cadastro realizado com sucesso", Toast.LENGTH_SHORT).show();
                                 startActivity(new Intent(CadastroActivity.this, EntrarActivity.class));
                             } else {
-                                Toast.makeText(CadastroActivity.this, "Erro no cadastro" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(CadastroActivity.this, "Erro no cadastro\n" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
